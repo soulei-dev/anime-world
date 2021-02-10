@@ -9,7 +9,7 @@ class App extends Component {
     this.state = {
       animes: [{
         title: 'Kimetsu No Yaiba - Le Train de l\'Infini',
-        img: 'https://animotaku.fr/wp-content/uploads/2020/10/Demon-slayer-kimetsu-no-yaiba-le-train-de-linfini-trailer.jpeg',
+        img: 'https://fr.web.img5.acsta.net/pictures/20/11/06/13/32/2403018.jpg',
         details: 'A | 40 min | Japan Animation, Action',
         description: "Demon Slayer: Kimetsu no Yaiba - Le Train de l'Infini (鬼き滅めつの刃やいば 無限列車編 Kimetsu no Yaiba: Mugen Ressha Hen) est un film d'animation japonais adaptant l'Arc Train de l'Infini du manga Kimetsu no Yaiba de Koyoharu Gotôge par ufotable. Il est la suite direct de l'Adaptation en anime."
       }, {
@@ -38,7 +38,7 @@ class App extends Component {
         <Header />
         <div className="d-flex flex-row flex-fill pt-4 p-2">
           <AnimeList />
-          <AnimeDetails />
+          <AnimeDetails anime={ this.state.animes[this.state.selectedAnime] }/>
         </div>
       </div>
     );
