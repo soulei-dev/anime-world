@@ -32,11 +32,7 @@ class App extends Component {
     }
   }
 
-  updateSelectedAnime = (title) => {
-    const index = this.state.animes.findIndex((a) => {
-      return title === a.title;
-    })
-
+  updateSelectedAnime = (index) => {
     this.setState({
       selectedAnime: index
     })
