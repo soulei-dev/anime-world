@@ -7,7 +7,7 @@ export default class AnimeList extends Component {
       <div className="w-75 d-flex flex-row flex-wrap align-content-start">
         {this.props.animes.map((a, index) => (
           <AnimeElement
-            key={ a.title }
+            key={ a.title + index }
             anime={ a }
             updateSelectedAnime={ () => { this.props.updateSelectedAnime(index) }}
           />
