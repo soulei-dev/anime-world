@@ -16,7 +16,7 @@ class App extends Component {
         animes: dataAnime,
         loaded: true,
       });
-    }, 2000);
+    }, 800);
   }
 
   updateSelectedAnime = (index) => {

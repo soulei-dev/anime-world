@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AnimeElement from "./AnimeElement";
+import AnimeElement from "./AnimeElement/AnimeElement";
 
 export default class AnimeList extends Component {
   render() {
